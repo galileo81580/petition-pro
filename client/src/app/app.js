@@ -33,11 +33,15 @@ angular.module('app').config(['$routeProvider', '$locationProvider', function ($
     .when('/contact', {
       templateUrl: 'contact.tpl.html',
       controller: 'ContactCtrl',
-      title: 'Contact Us'
+      title: 'Contact For Fayetteville'
     })
     .when('/about', {
       templateUrl: 'about.tpl.html',
-      title: 'About Us'
+      title: 'About For Fayetteville'
+    })
+    .when('/thanks', {
+      templateUrl: 'thanks.tpl.html',
+      title: 'For Fayetteville Thanks You'
     })
     .otherwise({
       templateUrl: '404.tpl.html',
@@ -52,7 +56,7 @@ angular.module('app').run(['$location', '$rootScope', 'security', function($loca
 
   // add a listener to $routeChangeSuccess
   $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-    $rootScope.title = current.$$route && current.$$route.title? current.$$route.title: 'Drywall is Running';
+    $rootScope.title = current.$$route && current.$$route.title? current.$$route.title: 'For Fayetteville';
   });
 }]);
 

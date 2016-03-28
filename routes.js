@@ -157,6 +157,7 @@ exports = module.exports = function(app, passport) {
   app.get('/', useAngular);
   app.get('/about', useAngular);
   app.get('/contact', useAngular);
+  app.get('/thanks', useAngular);
 
   //sign up
   app.get('/signup', useAngular);

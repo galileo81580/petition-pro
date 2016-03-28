@@ -1,4 +1,4 @@
-angular.module('templates.app', ['404.tpl.html', 'about.tpl.html', 'account/account.tpl.html', 'account/settings/account-settings.tpl.html', 'account/verification/account-verification.tpl.html', 'admin/accounts/admin-account.tpl.html', 'admin/accounts/admin-accounts.tpl.html', 'admin/admin-groups/admin-group.tpl.html', 'admin/admin-groups/admin-groups.tpl.html', 'admin/admin.tpl.html', 'admin/administrators/admin-administrator.tpl.html', 'admin/administrators/admin-administrators.tpl.html', 'admin/categories/admin-categories.tpl.html', 'admin/categories/admin-category.tpl.html', 'admin/statuses/admin-status.tpl.html', 'admin/statuses/admin-statuses.tpl.html', 'admin/users/admin-user.tpl.html', 'admin/users/admin-users.tpl.html', 'contact.tpl.html', 'footer.tpl.html', 'header.tpl.html', 'login/forgot/login-forgot.tpl.html', 'login/login.tpl.html', 'login/reset/login-reset.tpl.html', 'main.tpl.html', 'signup/signup.tpl.html']);
+angular.module('templates.app', ['404.tpl.html', 'about.tpl.html', 'account/account.tpl.html', 'account/settings/account-settings.tpl.html', 'account/verification/account-verification.tpl.html', 'admin/accounts/admin-account.tpl.html', 'admin/accounts/admin-accounts.tpl.html', 'admin/admin-groups/admin-group.tpl.html', 'admin/admin-groups/admin-groups.tpl.html', 'admin/admin.tpl.html', 'admin/administrators/admin-administrator.tpl.html', 'admin/administrators/admin-administrators.tpl.html', 'admin/categories/admin-categories.tpl.html', 'admin/categories/admin-category.tpl.html', 'admin/statuses/admin-status.tpl.html', 'admin/statuses/admin-statuses.tpl.html', 'admin/users/admin-user.tpl.html', 'admin/users/admin-users.tpl.html', 'contact.tpl.html', 'footer.tpl.html', 'header.tpl.html', 'login/forgot/login-forgot.tpl.html', 'login/login.tpl.html', 'login/reset/login-reset.tpl.html', 'main.tpl.html', 'signup/signup.tpl.html', 'thanks.tpl.html']);
 
 angular.module("404.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("404.tpl.html",
@@ -16,26 +16,30 @@ angular.module("about.tpl.html", []).run(["$templateCache", function($templateCa
     "        </div>\n" +
     "        <div class=\"media\">\n" +
     "            <a href=\"#\" class=\"pull-left\">\n" +
-    "                <img src=\"data:image/png;base64,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\"\n" +
+    "                <img src=\"/img/LOGO-FOR-FAYETTEVILLE3-ks-64x64.png\"\n" +
     "                style=\"width: 64px; height: 64px;\" class=\"media-object\">\n" +
     "            </a>\n" +
     "            <div class=\"media-body\">\n" +
-    "                <h4 class=\"media-heading\">Leo Damon</h4>\n" +
+    "                <h4 class=\"media-heading\">For Fayetteville</h4>\n" +
     "\n" +
-    "                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin\n" +
-    "                    commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>\n" +
+    "                <p>For Fayetteville represents an expanding group of people with a heart for this city and\n" +
+    "                    a passion for making it better for everyone.  For Fayetteville supports progressive initiatives,\n" +
+    "                    but we respect people with different political views.  Our core initiatives focus on inclusion and\n" +
+    "                    diversity, education, and the environment.</p>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"media text-right\">\n" +
     "            <a href=\"#\" class=\"pull-right\">\n" +
-    "                <img src=\"data:image/png;base64,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\"\n" +
+    "                <img src=\"/img/CityOfFayettevilleSeal-64x64.jpg\"\n" +
     "                style=\"width: 64px; height: 64px;\" class=\"media-object\">\n" +
     "            </a>\n" +
     "            <div class=\"media-body\">\n" +
-    "                <h4 class=\"media-heading\">Mathew DiCaprio</h4>\n" +
+    "                <h4 class=\"media-heading\">Good Government</h4>\n" +
     "\n" +
-    "                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin\n" +
-    "                    commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>\n" +
+    "                <p> For Fayetteville works to find common ground in our community, and strives to maintain civility and\n" +
+    "                    respect, especially when we disagree.  We encourage citizen participation in our local government\n" +
+    "                    and hold our elected officials accountable to the people.  Government should be all of us working\n" +
+    "                    together to improve the quality of life for all Fayetteville residents.</p>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"media\">\n" +
@@ -44,18 +48,20 @@ angular.module("about.tpl.html", []).run(["$templateCache", function($templateCa
     "                style=\"width: 64px; height: 64px;\" class=\"media-object\">\n" +
     "            </a>\n" +
     "            <div class=\"media-body\">\n" +
-    "                <h4 class=\"media-heading\">Nick Jackson</h4>\n" +
+    "                <h4 class=\"media-heading\">Civil Rights</h4>\n" +
     "\n" +
-    "                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin\n" +
-    "                    commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>\n" +
+    "                <p>After the city's new Nondiscrimination Ordinance was repealed in 2014, For Fayetteville\n" +
+    "                    worked with community volunteers, city leaders, and an alliance of more than 400 local businesses,\n" +
+    "                    to successfully pass a rewritten ordinance ordinance.  It won with 53% in favor of protecting the\n" +
+    "                    LGBT community from discrimination in housing, employment, and business.</p>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "    <div class=\"col-sm-6 special\">\n" +
     "        <div class=\"page-header\">\n" +
-    "            <h1>Prestige Worldwide</h1>\n" +
+    "            <h1>For Fayetteville</h1>\n" +
     "        </div>\n" +
-    "        <p class=\"lead\">The first name in entertainment.</p><i class=\"fa fa-volume-up super-awesome\"></i>\n" +
+    "       <img class=\"super-awesome\" src=\"img/UCRP_FarmersMarket_Table-340x259.jpg\"></img>\n" +
     "    </div>\n" +
     "</div>");
 }]);
@@ -1282,7 +1288,13 @@ angular.module("admin/users/admin-users.tpl.html", []).run(["$templateCache", fu
 angular.module("contact.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("contact.tpl.html",
     "<div class=\"row\">\n" +
-    "    <div class=\"col-sm-6\">\n" +
+    "        <h1>Contact Us</h1>\n" +
+    "\n" +
+    "    <p class=\"lead\">Get Involved Today!</p>\n" +
+    "        <address>info@forfayetteville.com</address>\n" +
+    "\n" +
+    "    <div class=\"clearfix\"></div>\n" +
+    "    <!-- <div class=\"col-sm-6\">\n" +
     "        <div class=\"page-header\"><h1>Send A Message</h1></div>\n" +
     "        <form name=\"msgForm\">\n" +
     "            <alert ng-repeat=\"alert in alerts\" type=\"{{alert.type}}\" close=\"closeAlert($index)\">{{alert.msg}}</alert>\n" +
@@ -1306,11 +1318,12 @@ angular.module("contact.tpl.html", []).run(["$templateCache", function($template
     "                <button type=\"button\" class=\"btn btn-primary btn-contact\" ng-disabled=\"!canSave(msgForm)\" ng-click=\"submit()\">Send Message</button>\n" +
     "            </div>\n" +
     "        </form>\n" +
+    "    </div> -->\n" +
+    "    <div class=\"col-sm-6 special\">\n" +
+    "        <a href=\"http://www.facebook.com/forfayetteville\" target=\"_blank\"><i class=\"fa fa-facebook-square super-awesome\"></i></a>\n" +
     "    </div>\n" +
     "    <div class=\"col-sm-6 special\">\n" +
-    "        <div class=\"page-header\"><h1>Contact Us</h1></div>\n" +
-    "        <p class=\"lead\">Freddy can't wait to hear from you.</p><i class=\"fa fa-reply-all super-awesome\"></i>\n" +
-    "        <address>1428 Elm Street &bull; San Francisco, CA 94122</address>\n" +
+    "        <a href=\"http://twitter.com/forfayetteville\" target=\"_blank\"><i class=\"fa fa-twitter-square super-awesome\"></i></a>\n" +
     "    </div>\n" +
     "</div>");
 }]);
@@ -1318,7 +1331,7 @@ angular.module("contact.tpl.html", []).run(["$templateCache", function($template
 angular.module("footer.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("footer.tpl.html",
     "<div class=\"footer\" ng-controller=\"FooterCtrl\">\n" +
-    "    <div class=\"container\"><span class=\"copyright pull-right\">&#169; 2015 Arthur Kao</span>\n" +
+    "    <div class=\"container\"><span class=\"copyright pull-right\">&#169; 2016 For Fayetteville</span>\n" +
     "        <ul class=\"links\">\n" +
     "            <li><a href=\"/\">Home</a></li>\n" +
     "            <li ng-if=\"!isAuthenticated()\"><a href=\"/contact\">Contact</a></li>\n" +
@@ -1336,8 +1349,8 @@ angular.module("header.tpl.html", []).run(["$templateCache", function($templateC
     "    <div class=\"container\">\n" +
     "        <div class=\"navbar-header\">\n" +
     "            <a href=\"/\" class=\"navbar-brand\">\n" +
-    "                <img src=\"/img/logo-symbol-64x64.png\" class=\"navbar-logo\">\n" +
-    "                <span class=\"navbar-brand-label\">Angular Drywall</span>\n" +
+    "                <img src=\"/img/LOGO-FOR-FAYETTEVILLE3-ks-64x64.png\" class=\"navbar-logo\">\n" +
+    "                <span class=\"navbar-brand-label\">For Fayetteville</span>\n" +
     "            </a>\n" +
     "            <button class=\"navbar-toggle btn navbar-btn\" ng-init=\"menuCollapsed = true\" ng-click=\"menuCollapsed = !menuCollapsed\">\n" +
     "                <span class=\"icon-bar\"></span>\n" +
@@ -1347,12 +1360,11 @@ angular.module("header.tpl.html", []).run(["$templateCache", function($templateC
     "        </div>\n" +
     "        <div class=\"navbar-collapse collapse\" collapse=\"menuCollapsed\" ng-click=\"menuCollapsed = true\">\n" +
     "            <ul class=\"nav navbar-nav\">\n" +
-    "                <li ng-if=\"!isAuthenticated()\" ng-class=\"{active: isActive('/')}\"><a href=\"/\">Home</a></li>\n" +
     "                <li ng-if=\"!isAuthenticated()\" ng-class=\"{active: isActive('/about')}\"><a href=\"/about\">About</a></li>\n" +
-    "                <li ng-if=\"!isAuthenticated()\" ng-class=\"{active: isActive('/signup')}\"><a href=\"/signup\">Sign Up</a></li>\n" +
     "                <li ng-if=\"!isAuthenticated()\" ng-class=\"{active: isActive('/contact')}\"><a href=\"/contact\">Contact</a></li>\n" +
     "                <li ng-if=\"isAuthenticated()\" ng-class=\"{active: isActive('/account')}\"><a href=\"/account\">My Account</a></li>\n" +
     "                <li ng-if=\"isAuthenticated()\" ng-class=\"{active: isActive('/account/settings')}\"><a href=\"/account/settings\">Settings</a></li>\n" +
+    "                <li><timer end-time=\"1459080389\" interval=\"30000\"/></li>\n" +
     "            </ul>\n" +
     "            <ul class=\"nav navbar-nav navbar-right\">\n" +
     "                <li ng-if=\"!isAuthenticated()\"><a href=\"/login\"><i class=\"fa fa-user\"></i> Sign In</a></li>\n" +
@@ -1366,7 +1378,7 @@ angular.module("header.tpl.html", []).run(["$templateCache", function($templateC
     "        <div class=\"navbar-header\">\n" +
     "            <a href=\"/admin/\" class=\"navbar-brand-admin\">\n" +
     "                <img src=\"/img/logo-symbol-64x64.png\" class=\"navbar-logo\">\n" +
-    "                <span class=\"navbar-brand-label\">Angular Drywall</span>\n" +
+    "                <span class=\"navbar-brand-label\">For Fayetteville</span>\n" +
     "            </a>\n" +
     "            <button class=\"navbar-toggle btn navbar-btn\" ng-click=\"toggleAdminMenu()\">\n" +
     "                <span class=\"icon-bar\"></span>\n" +
@@ -1460,7 +1472,12 @@ angular.module("login/login.tpl.html", []).run(["$templateCache", function($temp
     "                <span class=\"help-block\" ng-show=\"showError(loginForm.password, 'server')\">{{errfor.password}}</span>\n" +
     "            </div>\n" +
     "            <div class=\"form-group\">\n" +
-    "                <button type=\"button\" class=\"btn btn-primary btn-login\" ng-disabled=\"!canSave(loginForm)\" ng-click=\"submit()\">Sign In</button>\n" +
+    "                    <div class=\"btn-group\" role=\"group\">\n" +
+    "                        <a type=\"button\" class=\"btn btn-success btn-lg\" ng-disabled=\"!canSave(loginForm)\" ng-click=\"submit()\"><i class=\"fa fa-sign-in\"></i><span class=\"hidden-xs\"> Sign In</span></a>\n" +
+    "                        <a type=\"button\" class=\"btn btn-primary btn-lg\" href=\"/signup\"><i class=\"fa fa-user-plus\"></i><span class=\"hidden-xs\"> Sign Up</span></a>\n" +
+    "        \n" +
+    "    </div>\n" +
+    "                \n" +
     "                <!--<button type=\"button\" class=\"btn btn-primary btn-login\">Sign In</button>-->\n" +
     "                &nbsp;<a href=\"/login/forgot\" class=\"btn btn-link\">Forgot your password?</a>\n" +
     "            </div>\n" +
@@ -1505,44 +1522,51 @@ angular.module("login/reset/login-reset.tpl.html", []).run(["$templateCache", fu
 angular.module("main.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("main.tpl.html",
     "<div class=\"jumbotron\">\n" +
-    "    <h1>Success</h1>\n" +
+    "    <h2>Recall John La Tour</h2>\n" +
     "\n" +
-    "    <p class=\"lead\">Your Node.js website and user system is running. May the force be with you.\n" +
+    "    <p class=\"lead\">We believe in good government working for the people.  Ward 4 Alderman John La Tour has established\n" +
+    "                a 15-month record of obstructionism, self-interest, and vulgar humor.  Residents of Ward 4 are working\n" +
+    "                for his recall and the selection of a representative that will work in their interests instead of his own.</p>\n" +
     "\n" +
-    "    <div class=\"btn-group\" role=\"group\">\n" +
-    "        <a type=\"button\" class=\"btn btn-primary btn-lg\" href=\"/signup\"><i class=\"fa fa-user-plus\"></i><span class=\"hidden-xs\"> Sign Up</span></a>\n" +
-    "        <a type=\"button\" class=\"btn btn-success btn-lg\" href=\"/login\"><i class=\"fa fa-sign-in\"></i><span class=\"hidden-xs\"> Sign In</span></a>\n" +
-    "    </div>\n" +
     "    <div class=\"clearfix\"></div>\n" +
     "</div>\n" +
     "<div class=\"row\">\n" +
     "    <div class=\"col-sm-4\">\n" +
     "        <div class=\"panel panel-default\">\n" +
     "            <div class=\"panel-body\"><h3>About Us</h3>\n" +
-    "\n" +
-    "                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium\n" +
-    "                    voluptatum deleniti atque corrupti.</p>\n" +
+    "                <p>For Fayetteville is a progressive movement of people with a heart for Fayetteville and\n" +
+    "                    a passion for making it the best place to live.</p>\n" +
     "                <a href=\"/about\" class=\"btn btn-default btn-block\">Learn More</a>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "    <div class=\"col-sm-4\">\n" +
     "        <div class=\"panel panel-default\">\n" +
-    "            <div class=\"panel-body\"><h3>Sign Up</h3>\n" +
+    "            <div class=\"panel-body\"><h3>Volunteer</h3>\n" +
     "\n" +
-    "                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium\n" +
-    "                    voluptatum deleniti atque corrupti.</p>\n" +
-    "                <a href=\"/signup\" class=\"btn btn-default btn-block\">Learn More</a>\n" +
+    "                <p>For Fayetteville is an all volunteer organization and we need your help to make a difference!</p>\n" +
+    "\n" +
+    "                <a href=\"http://goo.gl/forms/uMepyuBcfF\" class=\"btn btn-default btn-block\">Volunteer Now</a>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <div class=\"col-sm-4\">\n" +
+    "     <div class=\"col-sm-4\">\n" +
     "        <div class=\"panel panel-default\">\n" +
-    "            <div class=\"panel-body\"><h3>Contact Us</h3>\n" +
+    "            <div class=\"panel-body\"><h3>Contribute</h3>\n" +
     "\n" +
-    "                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium\n" +
-    "                    voluptatum deleniti atque corrupti.</p>\n" +
-    "                <a href=\"/contact\" class=\"btn btn-default btn-block\">Learn More</a>\n" +
+    "                <p>Help us cover expenses by contributing to our campaign fund.</p>\n" +
+    "                <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\">\n" +
+    "                    <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\">\n" +
+    "                    <input type=\"hidden\" name=\"hosted_button_id\" value=\"73DJNFULJP5LU\">\n" +
+    "                    <p>State law requires us to collect the following information from contributors:</p>\n" +
+    "                        <p><input type=\"hidden\" name=\"on0\" value=\"Employer\">Employer<br>\n" +
+    "                        <input type=\"text\" name=\"os0\" maxlength=\"200\"></p>\n" +
+    "                        <p><input type=\"hidden\" name=\"on1\" value=\"Occupation\">Occupation</br>\n" +
+    "                        <input type=\"text\" name=\"os1\" maxlength=\"200\"></p>\n" +
+    "                    <input type=\"submit\"  class=\"btn btn-default btn-block\" border=\"0\" name=\"submit\" value=\"Donate Now\">\n" +
+    "                    <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\">\n" +
+    "                </form>\n" +
+    "\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -1591,6 +1615,53 @@ angular.module("signup/signup.tpl.html", []).run(["$templateCache", function($te
     "        <div class=\"page-header\"><h1>Campy Benefits</h1></div>\n" +
     "        <p class=\"lead\">Really, you will love it inside. It's super great!</p>\n" +
     "        <i class=\"fa fa-thumbs-o-up super-awesome\"></i>\n" +
+    "    </div>\n" +
+    "</div>");
+}]);
+
+angular.module("thanks.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("thanks.tpl.html",
+    "<div class=\"jumbotron\">\n" +
+    "    <h2>Thank You!</h2>\n" +
+    "\n" +
+    "    <p class=\"lead\">Paper and printing, water for volunteers, even this website cost money.  Your generous\n" +
+    "    contribution helps us meet the basic costs of our effort to make Fayetteville the best place to it can be.</p>\n" +
+    "    \n" +
+    "    <p>Thank you!</p>\n" +
+    "\n" +
+    "    <div class=\"clearfix\"></div>\n" +
+    "</div>\n" +
+    "<div class=\"row\">\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>About Us</h3>\n" +
+    "                <p>For Fayetteville is a progressive movement of people with a heart for Fayetteville and\n" +
+    "                    a passion for making it the best place to live.</p>\n" +
+    "                <a href=\"/about\" class=\"btn btn-default btn-block\">Learn More</a>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>Volunteer</h3>\n" +
+    "\n" +
+    "                <p>For Fayetteville is an all volunteer organization and we need your help to make a difference!</p>\n" +
+    "\n" +
+    "                <a href=\"http://goo.gl/forms/uMepyuBcfF\" class=\"btn btn-default btn-block\">Volunteer Now</a>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "     <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>Ward 4 Recall: John La Tour</h3>\n" +
+    "\n" +
+    "                <p>Ward 4 residents are collecting petitions to recall Alderman John La Tour.  During his 15 months in office,\n" +
+    "                he has established a record of obstructionism, self-interest, and vulgar humor.  We are happy to help them\n" +
+    "                in their efforts to select of a representative that will work in their interests instead of his own.</p>\n" +
+    "                \n" +
+    "                <a href=\"/recallJLT\" class=\"btn btn-default btn-block\">Learn More</a>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </div>\n" +
     "</div>");
 }]);
