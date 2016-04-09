@@ -1,4 +1,4 @@
-angular.module('templates.app', ['404.tpl.html', 'about.tpl.html', 'account/account.tpl.html', 'account/settings/account-settings.tpl.html', 'account/verification/account-verification.tpl.html', 'admin/accounts/admin-account.tpl.html', 'admin/accounts/admin-accounts.tpl.html', 'admin/admin-groups/admin-group.tpl.html', 'admin/admin-groups/admin-groups.tpl.html', 'admin/admin.tpl.html', 'admin/administrators/admin-administrator.tpl.html', 'admin/administrators/admin-administrators.tpl.html', 'admin/categories/admin-categories.tpl.html', 'admin/categories/admin-category.tpl.html', 'admin/statuses/admin-status.tpl.html', 'admin/statuses/admin-statuses.tpl.html', 'admin/users/admin-user.tpl.html', 'admin/users/admin-users.tpl.html', 'contact.tpl.html', 'footer.tpl.html', 'header.tpl.html', 'login/forgot/login-forgot.tpl.html', 'login/login.tpl.html', 'login/reset/login-reset.tpl.html', 'main.tpl.html', 'signup/signup.tpl.html', 'thanks.tpl.html']);
+angular.module('templates.app', ['404.tpl.html', 'about.tpl.html', 'account/account.tpl.html', 'account/settings/account-settings.tpl.html', 'account/verification/account-verification.tpl.html', 'admin/accounts/admin-account.tpl.html', 'admin/accounts/admin-accounts.tpl.html', 'admin/admin-groups/admin-group.tpl.html', 'admin/admin-groups/admin-groups.tpl.html', 'admin/admin.tpl.html', 'admin/administrators/admin-administrator.tpl.html', 'admin/administrators/admin-administrators.tpl.html', 'admin/categories/admin-categories.tpl.html', 'admin/categories/admin-category.tpl.html', 'admin/statuses/admin-status.tpl.html', 'admin/statuses/admin-statuses.tpl.html', 'admin/users/admin-user.tpl.html', 'admin/users/admin-users.tpl.html', 'contact.tpl.html', 'footer.tpl.html', 'header.tpl.html', 'login/forgot/login-forgot.tpl.html', 'login/login.tpl.html', 'login/reset/login-reset.tpl.html', 'main.tpl.html', 'signup/signup.tpl.html', 'thanks.tpl.html', 'volunteer.tpl.html']);
 
 angular.module("404.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("404.tpl.html",
@@ -1364,7 +1364,7 @@ angular.module("header.tpl.html", []).run(["$templateCache", function($templateC
     "                <li ng-if=\"!isAuthenticated()\" ng-class=\"{active: isActive('/contact')}\"><a href=\"/contact\">Contact</a></li>\n" +
     "                <li ng-if=\"isAuthenticated()\" ng-class=\"{active: isActive('/account')}\"><a href=\"/account\">My Account</a></li>\n" +
     "                <li ng-if=\"isAuthenticated()\" ng-class=\"{active: isActive('/account/settings')}\"><a href=\"/account/settings\">Settings</a></li>\n" +
-    "                <li><timer end-time=\"1459080389\" interval=\"30000\"/></li>\n" +
+    "                <li><timer end-time=\"1459080389\" interval=\"3000\" /><timer /></li>\n" +
     "            </ul>\n" +
     "            <ul class=\"nav navbar-nav navbar-right\">\n" +
     "                <li ng-if=\"!isAuthenticated()\"><a href=\"/login\"><i class=\"fa fa-user\"></i> Sign In</a></li>\n" +
@@ -1546,7 +1546,7 @@ angular.module("main.tpl.html", []).run(["$templateCache", function($templateCac
     "\n" +
     "                <p>For Fayetteville is an all volunteer organization and we need your help to make a difference!</p>\n" +
     "\n" +
-    "                <a href=\"http://goo.gl/forms/uMepyuBcfF\" class=\"btn btn-default btn-block\">Volunteer Now</a>\n" +
+    "                <a href=\"/volunteer\" class=\"btn btn-default btn-block\">Volunteer Now</a>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -1663,5 +1663,103 @@ angular.module("thanks.tpl.html", []).run(["$templateCache", function($templateC
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
+    "</div>");
+}]);
+
+angular.module("volunteer.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("volunteer.tpl.html",
+    "<div class=\"row\">\n" +
+    "        <h1>Contact Us</h1>\n" +
+    "\n" +
+    "    <p class=\"lead\">Help Recall Ward 4 Alderman La Tour!</p>\n" +
+    "        <address>info@forfayetteville.com</address>\n" +
+    "\n" +
+    "    <div class=\"clearfix\"></div>\n" +
+    "\n" +
+    "<div class=\"row\">\n" +
+    "        <div class=\"col-sm-8\">\n" +
+    "        <iframe src=\"https://docs.google.com/forms/d/19vFp3HG0CimXRQgvIu55fTnGkQsHlqa0uTC1hDpq8bQ/viewform?embedded=true#start=embed\" width=\"680\" height=\"2250\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>🚪 Get Signatures at Doors</h3>\n" +
+    "                <p>\n" +
+    "                The most effective way to get signatures is knocking door-to-door asking for petition signatures.  A script and talking points are provided to get you started and you can work in your own neighborhood if you want.  Bring a partner or a group and tackle an entire street in half the time.\n" +
+    "                </p>\n" +
+    "\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>💢 Get Signatures on the Street</h3>\n" +
+    "                <p>\n" +
+    "                Luckily, Ward 4 has just few major streets and several busy intersections.  Sign up to stake out one of these spots with a banner at peak evening drive-time to make it easy for folks to sign on their way home from work.  You might even meet some new friends this way!\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "     <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>🎫 Get Signatures at Events</h3>\n" +
+    "                <p>\n" +
+    "                Events like the Farmer’s Market draw a crowd so they are a great place to collect signatures.  If you’re going to be there anyway, take a clipboard and make an impact.  Perfect if you feel weird knocking on a stranger’s door.  <i>(Only Ward 4 residents can sign, so you may have more explaining to do at these.)</i>\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "         <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>📋 Be a Neighborhood Captain</h3>\n" +
+    "                <p>\n" +
+    "                Be the home-base for petitions in your neighborhood.  Let your HOA know you have them available and be ready when your neighbors come knocking.  Being a convenient presence within reach of all Ward 4 residents, wherever they are, will make signature gathering much easier.  When we get a question from your neighborhood, we'd let you know so you could take care of them.  And of course, we want your input on how to best reach your area of town.\n" +
+    "                </p>\n" +
+    "                <p>\n" +
+    "                You can really help by being a staging location for volunteer canvassers in your neighborhood.  They may need to pick up new petitions, a drink of water, or maybe a restroom break while they're out knocking doors.\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "         <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>📣 Spread the Word</h3>\n" +
+    "                <p>\n" +
+    "                Take advantage of your social media network, your water-cooler conversation, or your POA mailing list.  Let them know that petitions are available and why we need better representation at City Council.  Wherever you can get an audience, keep people talking about this issue.\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>🎉 Host an Event</h3>\n" +
+    "                <p>\n" +
+    "                The weather is getting really nice, so invite the people on your street to a back-yard cookout and have them sign while visiting with old friends or making new ones.  Throw a pot-luck, or a pool party.  You’ll be helping the effort and building community at the same time!\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>💻 Data Entry</h3>\n" +
+    "                <p>\n" +
+    "                Help validate signatures as they are received. There will be LOTS of handwritten pages and each line has to be entered into our database so we can track our progress.  Knowing who has already signed helps canvassers do their work where it’s needed most.\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-sm-4\">\n" +
+    "        <div class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-body\"><h3>Donate Notary Services</h3>\n" +
+    "                <p>\n" +
+    "                Our petitions have to be notarized when the canvasser signs them.  We need someone to donate his or her services and to be available for petition processing a few days a week, or when a group of canvassers return.\n" +
+    "                </p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "    \n" +
+    "</div>\n" +
+    "\n" +
+    "    <div class=\"clearfix\"></div>\n" +
+    "\n" +
     "</div>");
 }]);

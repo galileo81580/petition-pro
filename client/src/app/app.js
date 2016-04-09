@@ -12,6 +12,7 @@ angular.module('app', [
   'templates.app',
   'templates.common',
   'ui.bootstrap'
+  //'datatables'
 ]);
 
 
@@ -42,6 +43,10 @@ angular.module('app').config(['$routeProvider', '$locationProvider', function ($
     .when('/thanks', {
       templateUrl: 'thanks.tpl.html',
       title: 'For Fayetteville Thanks You'
+    })
+    .when('/volunteer', {
+      templateUrl: 'volunteer.tpl.html',
+      title: 'Volunteer For Fayetteville'
     })
     .otherwise({
       templateUrl: '404.tpl.html',
