@@ -1669,10 +1669,10 @@ angular.module("thanks.tpl.html", []).run(["$templateCache", function($templateC
 angular.module("volunteer.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("volunteer.tpl.html",
     "<div class=\"row\">\n" +
-    "        <h1>Contact Us</h1>\n" +
+    "        <h1>Volunteer Opportunities</h1>\n" +
     "\n" +
     "    <p class=\"lead\">Help Recall Ward 4 Alderman La Tour!</p>\n" +
-    "        <address>info@forfayetteville.com</address>\n" +
+    "\n" +
     "\n" +
     "    <div class=\"clearfix\"></div>\n" +
     "\n" +
